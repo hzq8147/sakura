@@ -41,6 +41,8 @@ const styles ={
             width:"100%",
             height:"100%",
             backgroundImage:"url("+require("../assets/image/background.jpeg")+")",
+            backgroundSize:"cover",
+            backgroundRepeat:"no-repeat",
 
             time:{
                 position:"absolute",
