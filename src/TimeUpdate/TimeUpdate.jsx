@@ -1,10 +1,12 @@
 import React from 'react';
 import {formatDuration} from "../Utils/TimeUtils";
+import './TimeUpdate.css'
+
 const styles={
     text: {
-        color: "red",
-        fontSize:"100px",
-        fontFamily:""
+        color: "#ecb1c9",
+        fontSize:"70px",
+        fontFamily:"XiangSu"
     }
 };
 
