@@ -1,7 +1,5 @@
 import React from 'react';
 import {formatDuration} from "../Utils/TimeUtils";
-
-
 const styles={
     text: {
         color: "red",
