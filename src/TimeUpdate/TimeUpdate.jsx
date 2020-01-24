@@ -4,14 +4,16 @@ import {formatDuration} from "../Utils/TimeUtils";
 
 const styles={
     text: {
-        color: "red"
+        color: "red",
+        fontSize:"100px",
+        fontFamily:""
     }
 };
 
 
 class TimeUpdate extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         const nowTime = new Date().getTime();
         this.state={
             remindTime: props.finalTime - nowTime
