@@ -82,7 +82,6 @@ function formatFromData(data, format, transform)
         if (valueStr.length >2){
             //比两位数多要裁
             valueStr = valueStr.slice(0,2);
-            console.log(valueStr)
         }else if (valueStr.length<2){
             //比两位数少要补0防止瞎眼睛
             for (let i =0;i<2-valueStr.length;i++)
