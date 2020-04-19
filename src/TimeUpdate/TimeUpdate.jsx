@@ -5,7 +5,7 @@ import './TimeUpdate.css'
 const styles={
     text: {
         color: "#ecb1c9",
-        fontSize:"70px",
+        fontSize:"10vw",
         fontFamily:"XiangSu",
     }
 };

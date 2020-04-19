@@ -3,7 +3,7 @@ import TimeUpdate from "../TimeUpdate/TimeUpdate";
 import "./Sakura.css"
 
 function Sakura() {
-    const finalTime =1580520600000;
+    const finalTime =1617120000000;
     return (
         <div style={styles.root}>
             <div style={styles.root.background}>
@@ -40,14 +40,14 @@ const styles ={
         background:{
             width:"100%",
             height:"100%",
-            backgroundImage:"url("+require("../assets/image/background.jpeg")+")",
+            backgroundImage:"url("+require("../assets/image/back_img.jpg")+")",
             backgroundSize:"cover",
             backgroundRepeat:"no-repeat",
 
             time:{
                 position:"absolute",
-                top:"35vh",
-                left:"5vw"
+                bottom:"8vh",
+                right:"20vw"
             }
         }
     },
