@@ -78,7 +78,17 @@ function formatFromData(data, format, transform)
                 value = newValue;
             }
         }
-        format = format.replace(/S+/g, value + "");
+        let valueStr=value.toString();
+        if (valueStr.length >2){
+            //比两位数多要裁
+            valueStr = valueStr.slice(0,2);
+            console.log(valueStr)
+        }else if (valueStr.length<2){
+            //比两位数少要补0防止瞎眼睛
+            for (let i =0;i<2-valueStr.length;i++)
+                valueStr = valueStr +"0";
+        }
+        format = format.replace(/S+/g, valueStr);
     }
     return format;
 }
