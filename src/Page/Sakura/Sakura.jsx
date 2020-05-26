@@ -1,5 +1,5 @@
 import React from 'react';
-import TimeUpdate from "../TimeUpdate/TimeUpdate";
+import TimeUpdate from "../../TimeUpdate/TimeUpdate";
 import "./Sakura.css"
 
 function Sakura() {
@@ -29,7 +29,7 @@ const styles ={
         sakura:{
             width:"100%",
             height:"100%",
-            backgroundImage: "url("+require("../assets/image/saku.gif")+")",
+            backgroundImage: "url("+require("../../assets/image/saku.gif")+")",
             zIndex:11,
             position:"absolute",
             top:0,
@@ -40,7 +40,7 @@ const styles ={
         background:{
             width:"100%",
             height:"100%",
-            backgroundImage:"url("+require("../assets/image/back_img.jpg")+")",
+            backgroundImage:"url("+require("../../assets/image/back_img.jpg")+")",
             backgroundSize:"cover",
             backgroundRepeat:"no-repeat",
 

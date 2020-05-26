@@ -12,19 +12,24 @@ const styles={
 
 
 class TimeUpdate extends React.Component {
+    interval;
     constructor(props) {
         super(props);
         const nowTime = new Date().getTime();
         this.state={
             remindTime: props.finalTime - nowTime
         }
+
     }
     componentDidMount() {
-        var interval = setInterval(()=>{
+        this.interval = setInterval(()=>{
             this.setState({
                 remindTime : this.state.remindTime - 90
             })
         },90)
+    }
+    componentWillUnmount() {
+        clearInterval(this.interval);
     }
 
     render() {
