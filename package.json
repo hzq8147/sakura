@@ -65,7 +65,8 @@
   "devDependencies": {
     "@types/react": "^16.9.36",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
-    "@typescript-eslint/parser": "^2.8.0"
+    "@typescript-eslint/parser": "^2.8.0",
+    "prettier": "2.0.5"
   },
   "scripts": {
     "start": "node scripts/start.js",
