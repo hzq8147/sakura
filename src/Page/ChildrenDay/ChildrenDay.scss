@@ -1,0 +1,38 @@
+.root{
+  background-color: black;
+  //width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .textContainer {
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: flex-start;
+    //align-items: center;
+    text-align: left;
+    color:white;
+    white-space: pre-wrap;
+    //&.show{
+    //  color:blue;
+    //}
+    ::after {
+      content: "";
+      display: inline-block;
+      animation: cursorShow 1s linear 0s infinite ;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      width: 0.7rem;
+      height: 1rem;
+
+      border-bottom: 0.1rem solid #FFFFFF;
+    }
+    @keyframes cursorShow {
+      0% {opacity: 1}
+      50% {opacity: 1}
+      51%{opacity: 0}
+      100% {opacity: 0}
+    }
+  }
+}
